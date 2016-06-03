@@ -10,6 +10,15 @@
     function contactsController(Contacts) {
       var vm = this;
       vm.data = Contacts;
+      // vm.formatDateFunction = formatDate;
     }
+
+  // function formatDate(date) {
+  //   var myDate = new Date(0);
+  //   myDate.setUTCSeconds(date);
+  //   myDate = $filter('date')(myDate, 'MMMM d, y')
+  //   return myDate;
+  // }
+
 })();
 
