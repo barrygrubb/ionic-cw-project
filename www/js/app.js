@@ -1,24 +1,18 @@
 (function() {
-  angular.module('cwapp', ['ionic', 'firebase'])
+  angular.module('cwapp', ['ionic'])
 
-    .factory("Contacts", function($firebaseArray) {
-      var ref = new Firebase("https://circular-wave-project.firebaseio.com/contacts");
-      return $firebaseArray(ref);
-    })
+    .factory("Contacts", contactsFactory)
+    .controller("ContactsController", contactsController);
 
-    .controller("ContactsController", contactsController)
     function contactsController(Contacts) {
       var vm = this;
       vm.data = Contacts;
-      // vm.formatDateFunction = formatDate;
     }
 
-  // function formatDate(date) {
-  //   var myDate = new Date(0);
-  //   myDate.setUTCSeconds(date);
-  //   myDate = $filter('date')(myDate, 'MMMM d, y')
-  //   return myDate;
-  // }
-
+    function contactsFactory($http) {
+      var data = $http.get('localhost:3000/getRecords');
+      console.log(data);
+      return data;
+    }
 })();
 
