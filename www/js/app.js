@@ -6,13 +6,13 @@
 
     function contactsController(Contacts) {
       var vm = this;
-      vm.data = Contacts;
+      Contacts.then(function success(response) {
+        vm.data = response.data;
+      })
     }
 
     function contactsFactory($http) {
-      var data = $http.get('localhost:3000/getRecords');
-      console.log(data);
-      return data;
+      return $http.get('https://cw-project-backend.herokuapp.com/getRecords');
     }
 })();
 
