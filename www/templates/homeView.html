@@ -1,0 +1,10 @@
+<ion-header-bar class="bar-stable">
+  <h1 class="title">Ionic Blank Starter</h1>
+</ion-header-bar>
+<ion-content>
+  <ion-list>
+    <a href="#/details" ng-repeat="contact in contacts.data" ng-click="contacts.set(contact)">
+    <ion-item>{{contact.fullName}} - {{contact.dateOfBirth | date:'d LLLL yyyy'}}</ion-item>
+    </a>
+  </ion-list>
+</ion-content>

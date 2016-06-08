@@ -1,0 +1,12 @@
+<ion-view title="Detail View">
+  <ion-header-bar class="bar-stable"><h1 class="title">{{contacts.get.fullName}}</h1></ion-header-bar>
+
+  <ion-content class="padding">
+    <!-- The content of the page -->
+    <h3>Interests</h3>
+    <ul>
+      <li ng-repeat="(key, interest) in contacts.get.interests">{{key}}</li>
+    </ul>
+    <a class="button" ui-sref="#">Add Photo</a>
+  </ion-content>
+</ion-view>
