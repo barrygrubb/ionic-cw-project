@@ -1,5 +1,5 @@
 (function() {
-  angular.module('cwapp', ['ionic'])
+  angular.module('cwapp', ['ionic', 'ngCordova'])
 
     .config(function($stateProvider, $urlRouterProvider) {
       $stateProvider
@@ -16,31 +16,5 @@
 
       $urlRouterProvider.otherwise("/");
     })
-
-    .factory("Contacts", contactsFactory)
-    .controller("ContactsController", contactsController);
-
-
-    function contactsController(Contacts) {
-      var vm = this;
-      vm.set = Contacts.set;
-      vm.get = Contacts.get();
-      Contacts.getAllContacts.then(function success(response) {
-        vm.data = response.data;
-      });
-    }
-
-    function contactsFactory($http) {
-      var selectedContact = {};
-      return {
-        getAllContacts: $http.get('https://cw-project-backend.herokuapp.com/getRecords'),
-        set: function(data) {
-          selectedContact = data;
-        },
-        get: function() {
-          return selectedContact;
-        }
-    };
-    }
 })();
 
