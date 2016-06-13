@@ -12,7 +12,7 @@
           url: '/details',
           templateUrl: 'templates/detailView.html',
           controller: 'ContactsController as contacts'
-        })
+        });
 
       $urlRouterProvider.otherwise("/");
     })
@@ -27,22 +27,20 @@
       vm.get = Contacts.get();
       Contacts.getAllContacts.then(function success(response) {
         vm.data = response.data;
-        // console.log(vm.data[0]);
-      })
+      });
     }
 
     function contactsFactory($http) {
-      var selectedContact = {}
+      var selectedContact = {};
       return {
         getAllContacts: $http.get('https://cw-project-backend.herokuapp.com/getRecords'),
         set: function(data) {
           selectedContact = data;
         },
         get: function() {
-          console.log(selectedContact);
           return selectedContact;
         }
-    }
+    };
     }
 })();
 
