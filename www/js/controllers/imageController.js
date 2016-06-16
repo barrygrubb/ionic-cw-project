@@ -4,13 +4,12 @@
     .controller("imageController", function($ionicActionSheet, $cordovaCamera) {
       var config = {
         apiKey: "GMYnb01kjIFJ6Ymxoa0KvBw4GBwhTKmryqB8D52l",
-        // storageBucket: "gs://circular-wave-project.appspot.com/"
+        storageBucket: "gs://circular-wave-project.appspot.com/"
         // storageBucket: "https://console.firebase.google.com/project/circular-wave-project/storage/files"
-        storageBucket: "https://firebasestorage.googleapis.com/v0/b/circular-wave-project.appspot.com/"
+        // storageBucket: "https://firebasestorage.googleapis.com/v0/b/circular-wave-project.appspot.com/"
       };
 
       firebase.initializeApp(config);
-      var storage = firebase.storage();
       var ref = firebase.storage().ref();
 
       var vm = this;
