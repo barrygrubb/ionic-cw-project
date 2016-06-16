@@ -15,6 +15,6 @@
         });
 
       $urlRouterProvider.otherwise("/");
-    })
+    });
 })();
 

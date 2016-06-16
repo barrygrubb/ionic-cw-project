@@ -1,7 +1,7 @@
 (function() {
   angular.module("cwapp")
 
-    .factory("Contacts", contactsFactory)
+    .factory("Contacts", contactsFactory);
 
   function contactsFactory($http) {
     var selectedContact = {};
