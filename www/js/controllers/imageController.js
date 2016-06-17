@@ -4,9 +4,7 @@
     .controller("imageController", function($ionicActionSheet, $cordovaCamera) {
       var config = {
         apiKey: "GMYnb01kjIFJ6Ymxoa0KvBw4GBwhTKmryqB8D52l",
-        storageBucket: "gs://circular-wave-project.appspot.com/"
-        // storageBucket: "https://console.firebase.google.com/project/circular-wave-project/storage/files"
-        // storageBucket: "https://firebasestorage.googleapis.com/v0/b/circular-wave-project.appspot.com/"
+        storageBucket: "circular-wave-project.appspot.com",
       };
 
       firebase.initializeApp(config);
@@ -18,15 +16,13 @@
         var options = {
           sourceType: srcType,
           targetWidth: 200,
-          targetHeight: 200,
-          saveToPhotoAlbum: true
+          targetHeight: 200
         };
         return options;
       }
 
       vm.show = function() {
 
-        // Show the action sheet
         $ionicActionSheet.show({
           buttons: [
             { text: 'Take Photo' },
@@ -41,24 +37,11 @@
 
               $cordovaCamera.getPicture(setOptions(srcType)).then(function(imageData){
                 var blob = new Blob([imageData], {type: "image/jpg"});
-                // blob.name = "filename.jpg";
+                var uploadTask = ref.child("images/filename.jpg").put(blob);
 
-                var uploadTask = ref.child("filename.jpg").put(blob);
                 uploadTask.on('state_changed', function(snapshot){
 
-                  var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                  console.log('Upload is ' + progress + '% done');
-                  switch (snapshot.state) {
-                    case firebase.storage.TaskState.PAUSED: // or 'paused'
-                      console.log('Upload is paused');
-                      break;
-                    case firebase.storage.TaskState.RUNNING: // or 'running'
-                      console.log('Upload is running');
-                      break;
-                  }
-
                 }, function(error){
-                  // console.log("Oh damn" + error);
                   console.log("ERROR!!!!!" + error.serverResponse);
                 }, function(){
                   var downloadURL = uploadTask.snapshot.downloadURL;
