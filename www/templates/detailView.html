@@ -8,6 +8,8 @@
     <ul>
       <li ng-repeat="interest in contacts.get.interests">{{interest}}</li>
     </ul>
-    <a class="button" ng-controller="imageController as imageController" ng-click="imageController.show()">Add Photo</a>
+    <div ng-controller="imageController as imageController">
+      <a class="button"  ng-click="imageController.show()">Add Photo</a>
+    </div>
   </ion-content>
 </ion-view>
