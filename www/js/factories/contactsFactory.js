@@ -12,7 +12,8 @@
       },
       get: function() {
         return selectedContact;
-      }
+      },
+      update: function(url) {$http.patch('https://cw-project-backend.herokuapp.com/updateRecord', [selectedContact, url])},
     };
   }
 

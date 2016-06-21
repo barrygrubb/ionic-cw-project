@@ -1,7 +1,7 @@
 (function() {
   angular.module("cwapp")
 
-    .controller("imageController", function($ionicActionSheet, $cordovaCamera) {
+    .controller("imageController", function($ionicActionSheet, $cordovaCamera, Contacts) {
       var config = {
         apiKey: "AIzaSyCG_LD6NqPbBwKTibm4Alr0H47IdJFMKKM",
         storageBucket: "circular-wave-project.appspot.com",
@@ -83,6 +83,7 @@
                   console.log("ERROR!!!!!" + error.serverResponse);
                 }, function(){
                   var downloadURL = uploadTask.snapshot.downloadURL;
+                  Contacts.update(downloadURL);
                 });
               }, function cameraError(error) {
                 console.debug("Unable to obtain picture: " + error, "app");
