@@ -3,7 +3,7 @@
 </ion-header-bar>
 <ion-content>
   <ion-list>
-    <a href="#/details" ng-repeat="contact in contacts.data" ng-click="contacts.set(contact)">
+    <a ng-repeat="contact in contacts.data" href="#/details/{{contact.id}}">
     <ion-item>{{contact.fullName}} - {{contact.dateOfBirth | date:'d LLLL yyyy'}}</ion-item>
     </a>
   </ion-list>

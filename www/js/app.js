@@ -9,7 +9,7 @@
           controller: 'ContactsController as contacts'
         })
         .state('details', {
-          url: '/details',
+          url: '/details/:id',
           templateUrl: 'templates/detailView.html',
           controller: 'ContactsController as contacts'
         });

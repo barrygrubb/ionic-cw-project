@@ -3,12 +3,12 @@
 
     .controller("ContactsController", contactsController);
 
-  function contactsController(Contacts) {
+  function contactsController(Contacts, $stateParams) {
     var vm = this;
-    vm.set = Contacts.set;
-    vm.get = Contacts.get();
+    var params = $stateParams.id;
     Contacts.getAllContacts.then(function success(response) {
       vm.data = response.data;
+      vm.selectedContact = response.data[params];
     });
   }
 })();
