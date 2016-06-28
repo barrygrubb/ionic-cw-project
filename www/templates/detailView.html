@@ -1,14 +1,14 @@
 <ion-view title="Detail View" cache-view="false">
   <ion-header-bar class="bar-stable">
     <a class="button pull-left" href="#/">Back</a>
-    <h1 class="title">{{contacts.selectContact.fullName}}</h1>
+    <h1 class="title">{{contacts.selectedContact.fullName}}</h1>
   </ion-header-bar>
 
   <ion-content class="padding">
-    <img src={{contacts.selectContact.imageURL}} id="profile-image">
+    <img src={{contacts.selectedContact.imageURL}} id="profile-image">
     <h3>Interests</h3>
     <ul>
-      <li ng-repeat="interest in contacts.selectContact.interests">{{interest}}</li>
+      <li ng-repeat="interest in contacts.selectedContact.interests">{{interest}}</li>
     </ul>
     <div ng-controller="imageController as imageController">
       <a class="button"  ng-click="imageController.show()">Add Photo</a>
