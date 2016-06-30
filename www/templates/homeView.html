@@ -1,10 +1,12 @@
-<ion-header-bar class="bar-stable">
-  <h1 class="title">Contacts List</h1>
-</ion-header-bar>
-<ion-content>
-  <ion-list>
-    <a ng-repeat="contact in contacts.data" href="#/details/{{contact.id}}">
-    <ion-item>{{contact.fullName}} - {{contact.dateOfBirth | date:'d LLLL yyyy'}}</ion-item>
-    </a>
-  </ion-list>
-</ion-content>
+<ion-view cache-view="false">
+  <ion-header-bar class="bar-stable bar-positive">
+    <h1 class="title">Contacts List</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <a ng-repeat="contact in contacts.data" href="#/details/{{contact.id}}" class="list-item">
+      <ion-item>{{contact.fullName}} - {{contact.dateOfBirth | date:'d LLLL yyyy'}}</ion-item>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

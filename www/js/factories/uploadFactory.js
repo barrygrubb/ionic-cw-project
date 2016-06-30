@@ -2,7 +2,7 @@
   angular.module("cwapp")
     .factory("Upload", uploadFactory);
 
-  function uploadFactory(Contacts, Id) {
+  function uploadFactory(Contacts, Id, $timeout, $ionicHistory) {
     return {
       run: function(ref, blob) {
         var filename = Id;

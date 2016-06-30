@@ -1,5 +1,17 @@
 /* Empty. Add your own CSS if you like */
 
 #profile-image {
-  max-width: 15%;
+  overflow:hidden;
+  height:200px;
+  width:200px;
+  margin: 0 auto;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+.list-item {
+  text-decoration: none;
 }

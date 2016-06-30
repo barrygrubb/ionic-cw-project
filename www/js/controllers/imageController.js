@@ -1,11 +1,11 @@
 (function() {
   angular.module("cwapp")
 
-    .controller("imageController", imageController); 
+    .controller("imageController", imageController);
 
-  function imageController($ionicActionSheet, $cordovaCamera, Contacts, Photo) {
+  function imageController($ionicActionSheet, Photo) {
     var vm = this;
-    
+
     vm.show = function() {
       $ionicActionSheet.show({
         buttons: [
@@ -16,7 +16,6 @@
         cancelText: 'Cancel',
         buttonClicked: function(index) {
           var srcType;
-          var dataUrl;
           if (index === 0) {
             srcType = Camera.PictureSourceType.CAMERA;
             Photo.photoGenerator(srcType);

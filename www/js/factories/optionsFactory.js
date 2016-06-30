@@ -9,7 +9,7 @@
           sourceType: srcType,
           destinationType: Camera.DestinationType.DATA_URL,
           targetWidth: 300,
-          targetHeight: 400
+          targetHeight: 300
         };
         return options;
       }
