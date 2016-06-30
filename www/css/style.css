@@ -15,3 +15,8 @@
 .list-item {
   text-decoration: none;
 }
+
+.add-photo-button {
+  margin: auto;
+  margin-top: 10px;
+}

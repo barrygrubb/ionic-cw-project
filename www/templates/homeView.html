@@ -4,8 +4,10 @@
   </ion-header-bar>
   <ion-content>
     <ion-list>
-      <a ng-repeat="contact in contacts.data" href="#/details/{{contact.id}}" class="list-item">
-      <ion-item>{{contact.fullName}} - {{contact.dateOfBirth | date:'d LLLL yyyy'}}</ion-item>
+      <a ng-repeat="contact in contacts.data" href="#/details/{{contact.id}}" class="item item-avatar">
+        <img src={{contact.imageURL}}>
+        <h2>{{contact.fullName}}</h2>
+        <p>{{contact.dateOfBirth | date:'d LLLL yyyy'}}</p>
       </a>
     </ion-list>
   </ion-content>

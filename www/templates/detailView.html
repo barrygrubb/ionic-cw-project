@@ -10,12 +10,12 @@
       <img src={{contacts.selectedContact.imageURL}}>
     </div>
 
-    <div ng-controller="imageController as imageController">
-      <a class="button button-block button-calm"  ng-click="imageController.show()">Add Photo</a>
+    <div ng-controller="imageController as imageController" class="text-center">
+      <a class="button button-calm add-photo-button icon-left ion-camera"  ng-click="imageController.show()">Add Photo</a>
     </div>
 
     <div class="row">
-      <div class="col col-75 col-offset-25">
+      <div class="col col-90 col-offset-10">
         <h3>Interests</h3>
         <ul>
           <li ng-repeat="interest in contacts.selectedContact.interests">- {{interest}}</li>
