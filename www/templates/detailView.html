@@ -5,15 +5,12 @@
   </ion-header-bar>
 
   <ion-content class="padding">
-
     <div id="profile-image">
       <img src={{contacts.selectedContact.imageURL}}>
     </div>
-
     <div ng-controller="imageController as imageController" class="text-center">
       <a class="button button-calm add-photo-button icon-left ion-camera"  ng-click="imageController.show()">Add Photo</a>
     </div>
-
     <div class="row">
       <div class="col col-90 col-offset-10">
         <h3>Interests</h3>
@@ -21,9 +18,6 @@
           <li ng-repeat="interest in contacts.selectedContact.interests">- {{interest}}</li>
         </ul>
       </div>
-
     </div>
-
-
   </ion-content>
 </ion-view>

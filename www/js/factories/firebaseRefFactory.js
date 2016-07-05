@@ -9,7 +9,6 @@
     };
 
     firebase.initializeApp(config);
-    var ref = firebase.storage().ref();
-    return ref;
+    return firebase.storage().ref();
   }
 })();
