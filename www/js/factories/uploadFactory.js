@@ -8,7 +8,6 @@
         // var filename = Id;
         var uploadTask = ref.child("images/" + Id.create() +  ".jpg").put(blob);
         uploadTask.on('state_changed', function(snapshot){
-
         }, function(error){
           console.log("ERROR!!!!!" + error.serverResponse);
         }, function(){

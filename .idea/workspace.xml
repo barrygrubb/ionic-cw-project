@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b637c16-b91d-42b0-a3d5-f11dceab7ae2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit-tests.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/unit-tests/contactsControllerSpec.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/contactsController.js" afterPath="$PROJECT_DIR$/www/js/controllers/contactsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factories/contactsFactory.js" afterPath="$PROJECT_DIR$/www/js/factories/contactsFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factories/firebaseRefFactory.js" afterPath="$PROJECT_DIR$/www/js/factories/firebaseRefFactory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factories/idFactory.js" afterPath="$PROJECT_DIR$/www/js/factories/idFactory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/factories/uploadFactory.js" afterPath="$PROJECT_DIR$/www/js/factories/uploadFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/detailView.html" afterPath="$PROJECT_DIR$/www/templates/detailView.html" />
     </list>
     <ignored path="cwapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +27,8 @@
       <file leaf-file-name="uploadFactory.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/factories/uploadFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -369,19 +362,19 @@
       <workItem from="1465389851501" duration="7650000" />
       <workItem from="1465820019636" duration="9216000" />
       <workItem from="1466083381962" duration="5876000" />
-      <workItem from="1467730069819" duration="1390000" />
+      <workItem from="1467730069819" duration="1563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27982000" />
+    <option name="totallyTimeSpent" value="28155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="44" width="1331" height="837" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24885496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24885496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -682,20 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/factories/idFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <marker date="1467732059000" expanded="true" signature="94:492" ph="{...}" />
-            <marker date="1467732059000" expanded="true" signature="126:487" ph="{...}" />
-            <marker date="1467732059000" expanded="true" signature="153:427" ph="{...}" />
-            <marker date="1467732059000" expanded="true" signature="280:371" ph="{...}" />
-            <marker date="1467732059000" expanded="true" signature="453:481" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factories/blobFactory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,10 +731,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/factories/idFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1467732695000" expanded="true" signature="94:465" ph="{...}" />
+            <marker date="1467732695000" expanded="true" signature="126:460" ph="{...}" />
+            <marker date="1467732695000" expanded="true" signature="153:400" ph="{...}" />
+            <marker date="1467732695000" expanded="true" signature="280:371" ph="{...}" />
+            <marker date="1467732695000" expanded="true" signature="426:454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/factories/uploadFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="135">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
           <folding />
         </state>
       </provider>
